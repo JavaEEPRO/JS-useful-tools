@@ -1,4 +1,4 @@
-They will tell you, 'Look, here!' or 'Look, there!' Don't go away, nor follow after them (Luke 17:23)
+//They will tell you, 'Look, here!' or 'Look, there!' Don't go away, nor follow after them (Luke 17:23)
 
 class RenderedOne extends React.Component {
   render() {
