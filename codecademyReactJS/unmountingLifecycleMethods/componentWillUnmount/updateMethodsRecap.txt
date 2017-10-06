@@ -1,0 +1,7 @@
+UPDATING/UNMOUNTING LIFECYCLE METHODS
+Lifecycle Methods Recap
+Congratulations on making it to the end of our Introductory React courses! By this point, you have acquired all of the tools that you need to program in React!
+
+Stay tuned for our intermediate-level React course, Building an Interactive React Application. Instead of learning more new tools, you will be focused on applying the tools that you have already learned. How many components should an app have? Which components should use props, and which should use state? Who should pass what information to whom? These are the kinds of structural questions that we will address in Building an Interactive React Application.
+
+However, you aren't quite with this course yet! We have put together a series of five articles that slowly walk you through the process of installing and configuring React.js on your local computer.
