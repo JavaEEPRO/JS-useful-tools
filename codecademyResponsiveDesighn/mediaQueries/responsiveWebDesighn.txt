@@ -1,0 +1,18 @@
+
+	And it came to pass, when he was come nigh to Bethphage and Bethany, at the mount called the mount of Olives, he sent two of his disciples (Luke 19:29)
+
+MEDIA QUERIES
+Responsive Web Design
+When someone visits a website, it's possible they are viewing it on a phone, tablet, computer, or even a TV monitor. Because screen sizes can vary greatly across different devices, it's important for websites to resize and reorganize their content to best fit screens of all sizes.
+
+When a website doesn't respond to different screen sizes, the website may look odd or become indecipherable on certain devices. This usually occurs on smaller screens, like phones. When a website responds to the size of the screen it's viewed on, it’s called a responsive website.
+
+Because websites can be displayed on thousands of different screen sizes, they must be able to respond to a change in screen size and adapt the content so that users can access it.
+Let's take a look at a website that does not respond to different screen sizes.
+
+First, visit this site.
+Then resize the width of your browser to simulate a smaller screen size. Note how the content on the web page does not shrink as you resize the browser's width.
+In contrast, let's take a look at a responsive website.
+
+First, visit this site.
+Again, resize the width of your browser and note how the content on the web page resizes and reorganizes itself.
