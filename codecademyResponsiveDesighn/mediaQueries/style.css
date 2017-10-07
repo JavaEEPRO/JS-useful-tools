@@ -1,0 +1,27 @@
+
+/*Saying, Go ye into the village over against you; in the which at your entering ye shall find a colt tied, whereon yet never man sat:
+loose him, and bring him hither.(Luke 19:30)*/
+
+border: 1px solid GhostWhite;
+  padding: 7px;
+  border-radius: 4px;
+  color: DarkOrange;
+  text-decoration: none;
+}
+
+.contact-btn {
+  cursor: pointer;
+  margin: 20px 30px;
+  text-align: center;
+}
+
+.contact-btn a:active {
+  position: relative;
+  bottom: 2px;
+}
+
+@media only screen and (max-width: 480px) {
+  .page-title{
+    width:270px;
+  }
+}
