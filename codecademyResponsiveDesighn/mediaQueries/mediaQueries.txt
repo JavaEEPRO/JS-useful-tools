@@ -1,0 +1,55 @@
+Saying, Go ye into the village over against you; in the which at your entering ye shall
+find a colt tied, whereon yet never man sat: loose him, and bring him hither.(Luke 19:30)
+
+MEDIA QUERIES
+Media Queries
+CSS uses media queries to adapt a website's content to different screen sizes. With media queries, CSS can detect the size of the current screen and apply different CSS styles depending on the width of the screen.
+
+@media only screen and (max-width: 480px) {
+  body {
+    font-size: 12px;
+  }
+}
+The example above demonstrates how a media query is applied. The media query defines a rule for screens smaller than 480 pixels (approximately the width of many smartphones in landscape orientation).
+
+Let’s break this example down into its parts:
+
+@media — This keyword begins a media query rule and instructs the CSS compiler on how to parse the rest of the rule.
+only screen — Indicates what types of devices should use this rule. In early attempts to target different devices, CSS incorporated different media types (screen, print, handheld). The rationale was that by knowing the media type, the proper CSS rules could be applied. However, “handheld” and “screen” devices began to occupy a much wider range of sizes and having only one CSS rule per media device was not sufficient. screen is the media type always used for displaying content, no matter the type of device. The only keyword is added to indicate that this rule only applies to one media type (screen).
+and (max-width : 480px) — This part of the rule is called a media feature, and instructs the CSS compiler to apply the CSS styles to devices with a width of 480 pixels or smaller. Media features are the conditions that must be met in order to render the CSS within a media query.
+CSS rules are nested inside of the media query's curly braces. The rules will be applied when the media query is met. In the example above, the text in the body element is set to a font-size of 12px when the user's screen is less than 480px.
+1.
+At the bottom of style.css, write a media query for a max-width of 480px.
+
+This will allow us to shrink the width of the .page-title element on smaller screens.
+2.
+When the screen is less than 480px wide, give the .page-title class a width of 270px.
+
+This will make the .page-title element appear more clearly on small screens. Test your code by resizing the browser.
+
+--------------------------------------------------style.css-------------------------------------------------------------------------------
+border: 1px solid GhostWhite;
+  padding: 7px;
+  border-radius: 4px;
+  color: DarkOrange;
+  text-decoration: none;
+}
+
+.contact-btn {
+  cursor: pointer;
+  margin: 20px 30px;
+  text-align: center;
+}
+
+.contact-btn a:active {
+  position: relative;
+  bottom: 2px;
+}
+
+@media only screen and (max-width: 480px) {
+  .page-title{
+    width:270px;
+  }
+}
+
+------------------------------------------------------------------------------------------------------------------------------------------
