@@ -1,0 +1,166 @@
+
+/*For I tell you that to everyone who has, will more be given; but from him who doesn't have,*/
+/*even that which he has will be taken away from him.    */
+
+
+/* Universal Styles */
+
+html{
+  font-size:16px;
+}
+
+body {
+  background-color: white;
+}
+
+p{
+  min-width:200px;
+  min-height:200px;
+}
+
+.image-container {
+  overflow:hidden;
+}
+
+.image-container img {
+  max-width:100%;
+  height:auto;
+  display:block;
+}
+
+/* Banner Section */
+
+#banner {
+  height:46rem;
+  background-image: url('camel-background.png');
+  background-position: center;
+  
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+#banner h1 {
+  
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  font-size:3.75rem;
+  color: white;
+}
+
+/* Blog Post */
+
+#blog {
+  
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width:86%;
+}
+
+#blog .post {
+  
+  
+	margin-top:12.5%;
+  margin-bottom:7.5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Merriweather', serif;
+  font-weight: 300;
+  font-size: 1rem;
+  text-align: center;
+  line-height: 1.8;
+  color: #444444;
+  width:52%;
+}
+
+.post h2 {
+  
+  font-size:1.875rem;
+}
+
+.post h3 {
+  font-size:1.125rem;
+  color: #999999;
+}
+
+.post .opening-line {
+  margin-top: 4.1875rem;
+  margin-bottom: 1.5rem;
+  color: black;
+  font-weight: bold;
+}
+
+.post .image-container {
+  width:100%;
+}
+
+/* Blog Images */
+
+.images {
+  margin-bottom:20%;
+}
+
+.images .image-container {
+  display: inline-block;
+  width:50%;
+}
+
+/* Footer */
+
+footer {
+  padding: 4rem 0;
+  border-top: 1px solid #999999;
+  font-family: 'Roboto', sans-serif;
+  font-size:1.125rem;
+  
+  color: #999999;
+  text-align: center;
+}
+
+
+
+/*SIZING ELEMENTS
+Scaling Images and Videos
+Many websites contain a variety of different media, like images and videos. When a website contains such media, it's important to make sure that it is scaled proportionally so that users can correctly view it.
+
+.container {
+  width: 50%;
+  height: 200px;
+  overflow: hidden;
+}
+
+.container img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+In the example above, .container represents a container div. It is set to a width of 50% (half of the browser's width, in this example) and a height of 200 pixels. Setting overflow to hidden ensures that any content with dimensions larger than the container will be hidden from view.
+
+The second CSS rule ensures that images scale with the width of the container. The height property is set to auto, meaning an image's height will automatically scale proportionally with the width. Finally, the last line will display images as block level elements (rather than inline-block, their default state). This will prevent images from attempting to align with other content on the page (like text), which can add unintended margin to the images.
+
+It's worth memorizing the entire example above. It represents a very common design pattern used to scale images and videos proportionally.
+
+Note: The example above scales the width of an image (or video) to the width of a container. If the image is larger than the container, the vertical portion of the image will overflow and will not display. To swap this behavior, you can set max-height to 100% and width to auto (essentially swapping the values). This will scale the height of the image with the height of the container instead. If the image is larger than the container, the horizontal portion of the image will overflow and not display.
+1.
+Take a look at the images on the web page. Notice that they currently display incorrectly (too large). Let's fix that.
+
+First, in style.css, set the overflow property in .image-container to hidden. Run your code.
+
+Take a look at the images once more. At this point, the images partially display. In reality, what we've done is constrain them to the dimensions of their container (.image-container). Any part of the image that overflows out of the container will be hidden from view. This will set us up to scale them proportionally.
+2.
+Resize the width of the browser back and forth. Notice that the images expand and contract to show more (or less) of the image. Instead, let's display the full image at all times.
+
+In style.css, set the maximum width in .image-container img to 100%. This will ensure the full image is always displayed.
+3.
+Great work! Take a look at the images on the web page again — they have been greatly improved!
+
+Next, we'll want to make sure the images automatically remain in proportion when the browser is resized.
+
+In .image-container img, set the height to auto.
+4.
+Finally, within the same CSS rule, set the display to block. This will instruct the images to behave as block-level elements and facilitate scaling (as opposed to their default inline behavior).*/
