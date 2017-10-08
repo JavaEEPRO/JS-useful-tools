@@ -1,0 +1,162 @@
+
+
+//і побачать лице Його, а Ймення Його на їхніх чолах.(Rev 22:4)
+
+html,
+body {
+  max-width: 1200px;
+  margin: auto;
+  font-family: "Space Mono", sans-serif;
+  font-size: 18px;
+  line-height: 1.4em;
+  color: GhostWhite;
+}
+
+body {
+  background-image: url("../img/space.jpg");
+  height: 100%;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.clearfix {
+  clear: both;
+}
+
+/* Title and Description */
+
+.page-title {
+  text-align: center;
+  margin: auto;
+  line-height: 2em;
+}
+
+.logo {
+  height: 80px;
+  width: 80px;
+  background-image: url("../img/spaceship.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: inline-block;
+  position: relative;
+  top: 1em;
+}
+
+.page-title h1 {
+  display: inline-block;
+}
+
+.main {
+  text-align: center;
+}
+
+.page-description {
+  font-size: 0.8rem;
+  padding: 30px;
+}
+
+.learn-more {
+  color: DarkOrange;
+  text-decoration: none;
+  display: block;
+  margin: 25px 0 0 0;
+  font-weight: bold;
+}
+
+/* Gallery */
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.gallery-item {
+  margin: 20px;
+}
+
+.gallery-item .thumbnail {
+  width: 240px;
+  border: 2px solid GhostWhite;
+  border-radius: 4px;
+}
+
+/* Footer Navigation */
+
+nav {
+  margin-top: 30px;
+}
+
+nav ul {
+  display: block;
+}
+
+nav li {
+  display: inline;
+  margin: 0 20px 0 0;
+  color: GhostWhite;
+}
+
+nav a {
+  line-height: 60px;
+  border: 1px solid GhostWhite;
+  padding: 7px;
+  border-radius: 4px;
+  color: DarkOrange;
+  text-decoration: none;
+}
+
+.contact-btn {
+  cursor: pointer;
+  margin: 20px 30px;
+  text-align: center;
+}
+
+.contact-btn a:active {
+  position: relative;
+  bottom: 2px;
+}
+
+@media only screen and (max-width: 480px) {
+  .page-title{
+    width:270px;
+  }
+}
+
+@media only screen and (min-width:320px) and (max-width:480px){
+  .gallery-item .thumbnail {
+    width:95%;
+  }
+}
+
+@media only screen and (min-resolution:150dpi){
+  .logo {
+    background-image: url("../img/spaceship@2x.png");
+  }
+}
+
+@media only screen and (max-resolution:150dpi) and (max-width:480px) {
+  .page-description {font-size: 20px;
+  }
+}
+
+
+MEDIA QUERIES
+And Operator
+In previous exercises, we chained multiple media features of the same type in one media query by using the and operator. It allowed us to create a range by using min-width and max-width in the same media query.
+
+The and operator can be used to require multiple media features. Therefore, we can use the and operator to require both a max-width of 480px and to have a min-resolution of 300dpi.
+
+For example:
+
+@media only screen and (max-width: 480px) and (min-resolution: 300dpi) {
+    /* CSS ruleset */
+}
+By placing the and operator between the two media features, the browser will require both media features to be true before it renders the CSS within the media query. The and operator can be used to chain as many media features as necessary.
+1.
+The website's text needs to be larger for users who have small, low resolution screens.
+
+Write a media query that applies when the max-resolution is 150dpi and the screen has a max-width of 480px.
+2.
+Inside the media query, make the font-size of the .page-description element 20px.
