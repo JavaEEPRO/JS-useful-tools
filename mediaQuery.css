@@ -1,0 +1,12 @@
+//і побачать лице Його, а Ймення Його на їхніх чолах. (Rev 22:4)
+
+@media only screen and (min-width:768px) and (max-width:1024px) and (orientation:landscape) {
+  .page-title, .page-description {
+  float: left;
+    width: 20em;
+}
+
+.page-description {
+    text-align: left;
+}
+}
